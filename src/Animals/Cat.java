@@ -3,8 +3,7 @@ package Animals;
 public class Cat {
 
   public String name;
-  public int age, weitgh;
-  public float strange;
+  public float strange, age, weitgh;
 
 
 
@@ -16,21 +15,19 @@ public class Cat {
     this.strange = strange;
   }
 
-
-
-  public int getAge() {
+  public float getAge() {
     return age;
   }
 
-  public void setAge(int age) {
+  public void setAge(float age) {
     this.age = age;
   }
 
-  public int getWeitgh() {
+  public float getWeitgh() {
     return weitgh;
   }
 
-  public void setWeitgh(int weitgh) {
+  public void setWeitgh(float weitgh) {
     this.weitgh = weitgh;
   }
 

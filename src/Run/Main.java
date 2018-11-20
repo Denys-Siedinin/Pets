@@ -29,16 +29,23 @@ public class Main {
     System.out.println("Введите имя кота: ");
     myCat.setName(br.readLine());
     System.out.println("Введите возвраст кота: ");
-    myCat.setAge(Integer.parseInt(br.readLine()));
+    myCat.setAge(Float.parseFloat(br.readLine()));
     System.out.println("Введите вес кота: ");
-    myCat.setWeitgh(Integer.parseInt(br.readLine()));
+    myCat.setWeitgh(Float.parseFloat(br.readLine()));
     System.out.println("Введите силу кота: ");
     myCat.setStrange(Float.parseFloat(br.readLine()));
 
+    System.out.println("Введите имя собаки: ");
+    myDog.setName(br.readLine());
+    System.out.println("Введите возвраст собаки: ");
+    myDog.setAge(Float.parseFloat(br.readLine()));
+    System.out.println("Введите вес собаки: ");
+    myDog.setWeitgh(Float.parseFloat(br.readLine()));
+    System.out.println("Введите силу собаки: ");
+    myDog.setStrange(Float.parseFloat(br.readLine()));
 
-    System.out.println("Animal | Name | Age | Weight");
-    System.out.println("Dog |" + myDog.getName() + " | " + myDog.getAge() + " | " + myDog.getWeitgh());
-    System.out.println("Cat |" + myCat.getName() + " | " + myCat.getAge() + " | " + myCat.getWeitgh());
+    System.out.println("Dog |" + myDog.getName() + " | " + myDog.getAge() + " years | " + myDog.getWeitgh() + " kg |");
+    System.out.println("Cat |" + myCat.getName() + " | " + myCat.getAge() + " years | " + myCat.getWeitgh() + " kg |");
 
     if (myDog.getStrange() > myCat.getStrange()) {
       System.out.println("Dog winner !!!");
